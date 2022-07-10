@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Employee form">
+        <meta charset="UTF-8">
+        <meta name="author" content="Eusebiu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="form employee">
+        <title>Employee form</title>
+        <h1><b>Employment form</b></h1>
+    </head>
+    <body>
+        <div>
+            <h3><b>Questions:</b></h3>
+            <form method="post" autocomplete="on">
+                <ol>
+                    <li>
+                        <label for="fullName">Write your full name:</label><br>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </li>
+                    <li>
+                        <label for="birth">Choose your birthday:</label><br>
+                        <input type="date" id="birth" name="birth" required>
+                    </li>
+                    <li>
+                        <label for="Email">Write your email here:</label>
+                        <input type="email" id="Email" name="email"><br>
+                    </li>
+                    <li>
+                        Mark your known programming languages:<br>
+                        <input type="checkbox" id="lang1" name="html">
+                        <label for="lang1">HMTL</label><br>
+                        <input type="checkbox" id="lang2" name="css">
+                        <label for="lang2">CSS</label><br>
+                        <input type="checkbox" id="lang3" name="JavaScript">
+                        <label for="lang3">JavaScrpit</label><br>
+                        <input type="checkbox" id="lang4" name="Java">
+                        <label for="lang4">Java</label><br>
+                    </li>
+                    <li>
+                        <label for="exp">Enter your experience (in years):</label>
+                        <input type="number" id="exp" name="experience" placeholder="0">
+                    </li>
+                    <li>
+                        <label for="description">Write a description of your personality and goals:</label><br>
+                        <textarea id="description" name="person" placeholder="I am Bob" rows="10" cols="40"></textarea>
+                    </li>
+                    <li>
+                        <fieldset>
+                            <legend>Skills</legend>
+                            <label for="self-estimation">How good are your problem solving skills?</label><br>
+                            1 <input type="range" id="self-estimation" name="self" min="1" max="10"> 10<br>
+                            What domain do you want to work in?<br>
+                            <input type="radio" name="domain" id="SD/SE">
+                            <label for="SD/SE">Software development/engineer</label><br>
+                            <input type="radio" name="domain" id="DevOps">
+                            <label for="DevOps">DevOps</label><br>
+                            <input type="radio" name="domain" id="WebDev">
+                            <label for="WebDev">WebDev</label><br>
+                            <label>Choose your working type:</label>
+                            <select id="workType" name="workType">
+                                <option value="remote">Remote</option>
+                                <option value="office">Office</option>
+                                <option value="remote and office">Remote and office</option>
+                            </select>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label>Choose your favourite OS:</label><br>
+                        <input list="OS" required>
+                        <datalist id="OS">
+                            <option value="Linux">
+                            <option value="MacOS">
+                            <option value="Windows">
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="CV">Upload your CV here: </label>
+                        <input type="file" name="CV" id="CV">
+                    </li>
+                    <li>
+                        <label for="arriving">When can we have you in our team?</label><br>
+                        <input type="month" id="arriving" name="canCome">
+                    </li>
+                    <li>
+                        <label for="wakeup">When do you wake up?</label>
+                        <input type="time" name="wakeupTime" id="wakeup">
+                    </li>
+                </ol>
+                <input type="reset" name="reset" value="Reset">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
