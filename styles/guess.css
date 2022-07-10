@@ -1,0 +1,7 @@
+body {
+    margin: 0 30vw;
+}
+
+#field1, #field2, #field3 {
+    margin: 10px 0;
+}

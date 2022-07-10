@@ -1,0 +1,83 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    background-color: gray;
+    border: 3px solid blue;
+    position: sticky;
+}
+
+span {
+    border: 2px solid red;
+}
+
+.btn {
+    padding: 5px;
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    border: 5px red solid;
+}
+
+.btn:hover {
+    color: blue;
+    background-color: white;
+}
+
+.special {
+    clear: both;
+    border: 0.4em solid gray;
+    padding: 1em;
+    margin: auto;
+    border-radius: 15px;
+    width: 70%;
+    outline: 10px red solid;
+    outline-offset: 10px;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: red;
+    top: 0;
+    padding: 5px;
+}
+
+p {
+    text-indent: 2%;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:link {
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+}
+
+strong {
+    text-transform: uppercase;
+    background-color:chartreuse;
+}
+
+footer {
+    color: red;
+    size: 10;
+}
